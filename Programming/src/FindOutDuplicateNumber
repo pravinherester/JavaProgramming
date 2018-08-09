@@ -1,0 +1,18 @@
+1,2,3,4,5,6,7,8,8,9 ==>array
+
+sum of 1 to n numbers
+n*n+1/2
+
+sum of 1 to 9
+9*10/2=45
+
+original sum
+
+total=0
+for loop i< array.size{
+total=total+array[i]
+}
+
+total=53
+missing number =53-45=8
+

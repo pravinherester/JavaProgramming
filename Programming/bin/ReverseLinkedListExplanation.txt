@@ -1,0 +1,73 @@
+current=node
+next =null
+prev =null
+
+loop current!=null{
+next=current.next;
+current.next=prev;
+prev=current;
+current=next;
+
+
+
+}
+
+head(100)->a(100,200)->b(200,300)->c(300,400)->d(400,null) ->null
+
+next= current.next (tmp)
+current.next=previous (if no node then null) (a,null)
+prev=current(100)
+current=next;
+
+iterative1:
+next=200
+a(100,null)  --> a(100,null)
+prev=100;
+current=200
+
+iteration2:
+next=300
+b(200,100) --> b(200,100)-->a(100,null)
+prev=200
+current=300
+
+iteration 3
+
+next=400
+c(300,200) --> c(300,200)->b(200,100) ->a(100,null)
+prev=300
+current=400
+
+iteration 4
+
+next=null
+current.next=300-> d(400,300)-> c(300,200)->b(200,100) ->a(100,null)
+prev=400
+current=null
+
+
+iteration 5:
+null 
+
+
+head=prev;-->head (400)-->d(400,300)-> c(300,200)->b(200,100) ->a(100,null)
+
+
+
+head=400 head(400)-d(400,300)-c(300,200)->b(200,100) ->a(100,null)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
